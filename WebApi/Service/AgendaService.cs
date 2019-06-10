@@ -23,7 +23,7 @@ namespace Service
         {
             _agendaDbContext = agendaDbContext;
         }
-        public IEnumerable<Agenda> GetAll(Agenda model)
+        public IEnumerable<Agenda> GetAll()
         {
             var result = new List<Agenda>();
             try
@@ -100,11 +100,6 @@ namespace Service
             }
 
             return true;
-        }
-
-        public IEnumerable<Agenda> GetAll()
-        {
-            throw new NotImplementedException();
         }
     }
 }
